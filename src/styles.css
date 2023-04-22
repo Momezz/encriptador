@@ -49,8 +49,8 @@ body {
   font-size: 32px;
   height: 485px;
   border: none;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .index__subcont-output{
@@ -60,6 +60,7 @@ body {
   background-color: #FFFFFF;
   margin-bottom: 40px;
   border-radius: 25px;
+  position: relative;
   min-height: 400px;
   margin-top: 53px;
   color: #495057;
@@ -101,14 +102,15 @@ body {
   color: #0A3871;
 }
 
-
 .index__copy-btn {
   border: 1px solid #0A3871;
   margin-bottom: 40px;
   border-radius: 25px;
   color: #0A3871;
   height: 67px;
-  width: 100%;
+  width: 90%;
+  position: absolute;
+  bottom: 0;
 }
 
 @media (min-width: 376px) {
@@ -134,18 +136,14 @@ body {
     max-width: 480px;
     max-height: 288px;
   }
-
-  .index__text-output {
-    margin-top: 320px;
-  }
 }
 
 @media (min-width: 1440px) {
   .index__container {
+    grid-template-columns: auto 30%;
     display: grid;
     height: 100%;
     margin: 25px;
-    grid-template-columns: auto 30%;
   }
 
   .index__text-output {
@@ -157,14 +155,14 @@ body {
   }
 
   .index__text-input {
-    max-width: 680px;
-    max-height: 288px;
     margin-left: 100px;
+    max-height: 288px;
+    max-width: 680px;
   }
 
   .index__title {
-    margin-top: 60px;
     margin-left: 100px;
+    margin-top: 60px;
   }
 
   .index__note {
