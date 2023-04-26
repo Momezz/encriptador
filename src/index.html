@@ -15,21 +15,20 @@
       <p class="index__logo">
         <img class="index__image" src="/src/assets/Vector.jpg" />
       </p>
-      <h2 class="index__title"></h2>
-      <textarea id="texto-a-encriptar" placeholder="Ingrese el texto aqui" class="index__text-input"></textarea>
+      <textarea id="text-to-encrypt" placeholder="Ingrese el texto aqui" class="index__text-input"></textarea>
+      <button id="clean" class="index__btn-clean">Limpiar</button>
       <p class="index__note"><span><img src="/src/assets/icon.png" alt=""></span> Solo letras minúsculas y sin acentos
       </p>
       <div class="index__cont-btns">
-        <button class="index__encrypt-btn index__btn" onclick="encriptar()">Encriptar</button>
-        <button class="index__decrypt-btn index__btn">Desencriptar</button>
+        <button class="index__encrypt-btn index__btn" id="encrypt">Encriptar</button>
+        <button class="index__decrypt-btn index__btn" id="decrypt">Desencriptar</button>
       </div>
     </article>
     <article class="index__subcont-output">
-      <p class="index__text-output" id="texto-encriptado">.</p>
-      <button class="index__copy-btn">Copiar</button>
+      <p class="index__text-output" id="encrypted-text">.</p>
+      <button class="index__copy-btn" id="copy-text">Copiar</button>
     </article>
   </section>
 </body>
 <script type="text/javascript" src="main.js"></script>
-
 </html>

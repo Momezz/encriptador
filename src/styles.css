@@ -131,10 +131,16 @@ body {
     margin-right: 20px;
   }
 
-
   .index__text-input {
     max-width: 480px;
     max-height: 288px;
+  }
+
+  .index__btn-clean{
+    background-color: #0A3871;
+    color: #FFFFFF;
+    height: 33px;
+    width: 90px;
   }
 }
 
