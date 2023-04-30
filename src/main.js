@@ -1,6 +1,14 @@
+const success = document.getElementById('message-found');
+const notFound = document.getElementById('message-not-found');
+
 document.getElementById('encrypt').addEventListener('click', () => {
   const text = document.getElementById('text-to-encrypt').value;
   const expression = /[^a-zA-Z0-9\s]/;
+  if (text === '') {
+    success.style.display = 'none';
+    notFound.style.display = 'block';
+    return;
+  }
   if (expression.test(text)) {
     return;
   }
@@ -23,6 +31,8 @@ document.getElementById('encrypt').addEventListener('click', () => {
     }
   }
   document.getElementById('encrypted-text').innerHTML = newText.join('');
+  success.style.display = 'block';
+  notFound.style.display = 'none';
 });
 
 document.getElementById('decrypt').addEventListener('click', () => {
