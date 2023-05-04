@@ -13,22 +13,28 @@
   <section class="index__container">
     <article class="index__subcont-input">
       <p class="index__logo">
-        <img class="index__image" src="/src/assets/Vector.jpg" />
+        <img class="index__image" src="../src/assets/Vector.jpg" />
       </p>
       <textarea id="text-to-encrypt" placeholder="Ingrese el texto aqui" class="index__text-input"></textarea>
       <button id="clean" class="index__btn-clean">Limpiar</button>
-      <p class="index__note"><span><img src="/src/assets/icon.png" alt=""></span> Solo letras minúsculas y sin acentos
+      <p class="index__note"><span><img src="../src/assets/icon.png" alt=""></span> Solo letras minúsculas y sin acentos
       </p>
       <div class="index__cont-btns">
         <button class="index__encrypt-btn index__btn" id="encrypt">Encriptar</button>
         <button class="index__decrypt-btn index__btn" id="decrypt">Desencriptar</button>
       </div>
     </article>
-    <article class="index__subcont-output">
-      <p class="index__text-output" id="encrypted-text">.</p>
+    <article id="message-found" class="idex__found index__subcont-output">
+      <p class="index__text-output" id="encrypted-text"></p>
       <button class="index__copy-btn" id="copy-text">Copiar</button>
+    </article>
+    <article id="message-not-found" class="index__not_found index__subcont-output">
+      <img class="index__munieco" src="../src/assets/Muñeco.png" />
+      <h2 class="index__text-output" id="encrypted-text">Ningún mensaje fue encontrado</h2>
+      <p>Ingresa el texto que deseas encriptar o desencriptar</p>
     </article>
   </section>
 </body>
 <script type="text/javascript" src="main.js"></script>
+
 </html>
