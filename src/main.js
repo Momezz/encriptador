@@ -44,6 +44,8 @@ document.getElementById('decrypt').addEventListener('click', () => {
     text = newText.replace(/ober/g, 'o');
     newText = text.replace(/ufat/g, 'u');
     document.getElementById('encrypted-text').innerHTML = newText;
+    success.style.display = 'block';
+    notFound.style.display = 'none';
   }
 });
 
