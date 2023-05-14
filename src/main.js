@@ -10,6 +10,7 @@ document.getElementById('encrypt').addEventListener('click', () => {
     return;
   }
   if (expression.test(text)) {
+    document.getElementById('text-to-encrypt').value = 'Texto no valido, Recuerda no incluir caracteres especia';
     return;
   }
   const newText = text.toLowerCase().split('');
@@ -52,7 +53,6 @@ document.getElementById('decrypt').addEventListener('click', () => {
 document.getElementById('clean').addEventListener('click', () => {
   if (document.getElementById('text-to-encrypt').value !== '') {
     document.getElementById('text-to-encrypt').value = '';
-
     success.style.display = 'none';
     notFound.style.display = 'block';
   }
